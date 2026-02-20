@@ -22,7 +22,7 @@ if st.button("Consult the Council"):
         # These are our three expert models for 2026
         experts = {
             "Expert 1 (The Logician)": "anthropic/claude-3-haiku",
-            "Expert 2 (The Data King)": "google/gemini-1.5-flash",
+            "Expert 2 (The Data King)": "google/gemini-flash-1.5",
             "Expert 3 (The Strategist)": "meta-llama/llama-3.1-8b-instruct"
         }
         
@@ -52,7 +52,7 @@ if st.button("Consult the Council"):
             """
             
             final_verdict = client.chat.completions.create(
-                model="anthropic/claude-3.5-sonnet",
+                model="anthropic/claude-3-haiku",
                 messages=[{"role": "user", "content": manager_prompt}]
             )
             
