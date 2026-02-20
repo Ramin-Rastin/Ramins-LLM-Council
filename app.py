@@ -21,9 +21,9 @@ if st.button("Consult the Council"):
     else:
         # These are our three expert models for 2026
         experts = {
-            "Expert 1 (The Logician)": "anthropic/claude-3.5-sonnet",
-            "Expert 2 (The Data King)": "google/gemini-1.5-pro",
-            "Expert 3 (The Strategist)": "meta-llama/llama-3.3-70b-instruct"
+            "Expert 1 (The Logician)": "anthropic/claude-3-haiku",
+            "Expert 2 (The Data King)": "google/gemini-flash-1.5",
+            "Expert 3 (The Strategist)": "meta-llama/llama-3.1-8b-instruct"
         }
         
         answers = {}
