@@ -64,3 +64,10 @@ if st.button("Consult the Council"):
                 for name, text in answers.items():
                     st.write(f"**{name}**")
                     st.info(text)
+                    # Add a divider for clarity
+st.divider()
+
+# The "SVP Panic Button"
+if st.button("🔄 Clear & Retry Council Meeting"):
+    st.cache_data.clear()  # Wipes any "stale" answers from the memory
+    st.rerun()             # Re-executes the whole script from the top
